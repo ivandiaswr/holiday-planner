@@ -1,0 +1,115 @@
+.card-create{
+    display: flex;
+    
+    padding: 15px;
+    background-color: rgba(221, 221, 221, 0.616);
+    border-radius: 50px;
+}
+
+.card-input-create {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-input-create input, .card-input-create textarea{
+    padding: 15px;
+    border: 1px solid rgba(255, 140, 0, 0.344);
+    border-radius: 20px;
+}
+
+.card-create-form{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    
+    padding: 50px;
+    border-radius: 50px;
+}
+
+textarea {
+    resize: none;
+}
+
+.button-cancel-create{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    border: 1px solid whitesmoke;
+    border-radius: 30px;
+    color: #ffffff;
+    background-color: rgba(255, 140, 0, 0.594);
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    cursor: pointer;
+}
+
+.button-cancel-create:hover {
+    color: rgba(255, 140, 0, 0.615);
+    background: whitesmoke;
+    border: 1px solid rgba(255, 140, 0, 0.615);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-create {
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    color: #ffffff;
+    background-color: rgba(255, 140, 0, 0.594);
+    cursor: pointer;
+    font-family: "Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    min-height: 60px;
+    padding: 16px 24px;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  }
+  
+.button-create:disabled {
+    pointer-events: none;
+}
+  
+.button-create:hover {
+    color: rgba(255, 140, 0, 0.594);
+    background-color: whitesmoke;
+    border: 1px solid rgba(255, 140, 0, 0.615);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+  
+.button-create:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.error{
+    font-size: 15px;
+    text-align: center;
+    border-radius: 25px;
+    color: #D8000C;
+	background-color: #FFBABA;
+}
+  
+
+/* small tablet styles*/
+@media screen and (min-width: 620px){
+
+  
+}
+  
+/* large tablets & laptops styles*/
+@media screen and (min-width: 960px){
+    .card-create-form{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+  
+/* desktop styles*/
+@media screen and (min-width: 1200px){
+    .card-create-form{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

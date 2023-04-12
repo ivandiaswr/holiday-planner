@@ -1,0 +1,226 @@
+section {
+    padding: 35% 13%;
+}
+/* Welcome */
+
+.section-welcome{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-welcome-text{
+    line-height: 40px;
+    font-size: 30px;
+}
+
+.section-welcome-text p{
+    margin-top: 25px;
+    font-size: 18px;
+    width: 90%;
+}
+
+.section-welcome-img img{
+    width: 200px;
+    height: 300px;
+}
+
+.section-welcome-button{
+    width: 100%;
+    font-size: 25px;
+    height: 50px;
+    padding: 0px 10px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background-color: rgba(255, 140, 0, 0.594);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.section-welcome-button:hover{
+    color: rgba(255, 140, 0, 0.594);
+    background-color: whitesmoke;
+    border: 1px solid rgba(255, 140, 0, 0.615);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+/* Funcionalities */
+
+.section-funcionalities{
+    padding-top: 5%;
+    height: 100%;
+    width: 100%;
+    min-height: 75vh;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 25px;
+}
+
+.section-funcionalities-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-funcionalities-group p {
+    line-height: 27px;
+    font-weight: 500;
+    color: rgb(105, 105, 105);
+}
+
+.section-funcionalities-outter-img{
+    width: 200px;
+    height: 150px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70% 30% 25% 75% / 42% 16% 84% 58%;
+
+    background: linear-gradient(90deg, rgba(245,140,5,0.4441624365482234) 28%, rgba(255,144,0,0.449238578680203) 69%, rgba(247,172,8,0.7715736040609137) 100%); 
+    margin-bottom: 20px;
+}
+
+.section-funcionalities-img{
+    width: 60px;
+}
+
+/* Roadmap */
+
+.section-roadmap {
+    padding-top: 5%;
+    height: 100%;
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-roadmap-list{
+    list-style: none;
+}
+
+.section-roadmap-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.section-roadmap-item p{
+    line-height: 27px;
+    font-weight: 500;
+    color: rgb(105, 105, 105);
+}
+
+.section-roadmap-item-title{
+    display: flex;
+    align-items: center;
+    font-size: 27px;
+    margin-top: 30px;
+}
+
+.section-roadmap-item-number{
+    margin-right: 30px;
+    width: 5.5rem;
+    height: 4.5rem;
+    background: #e19d31 linear-gradient(to bottom right, #e99816 25%, #e1ccd0);
+    text-shadow: 0 0 2px #ED4264;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contact */
+
+.section-contact{
+    padding-top: 5%;
+    height: 100%;
+    width: 100%;
+    min-height: 50vh;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.section-contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    min-width: 200px;
+    min-height: 250px;
+}
+
+.section-contact-info p {
+    color: gray;
+}
+
+/* Comumn */
+
+.titles{
+    display: flex;
+    justify-content: center;
+    
+    border-bottom: 1px solid rgba(255, 140, 0, 0.249);
+}
+
+/* small tablet styles*/
+@media screen and (min-width: 620px){
+    section {
+        padding: 15% 13%;
+    }
+    .section-welcome{
+        flex-direction: row;
+       
+    }
+    .section-welcome-text{
+        max-width: 600px;
+    }
+    .section-funcionalities{
+        grid-template-columns: 1fr 1fr;
+    }
+    .section-contact{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+/* large tablets & laptops styles*/
+@media screen and (min-width: 960px){
+    section {
+        padding: 8% 10% !important;
+    }
+    .section-funcionalities{
+        grid-template-columns: 1fr 1fr;
+        min-height: 60vh;
+    }
+    .section-contact{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* desktop styles*/
+@media screen and (min-width: 1200px){
+    section {
+        padding: 5% 10% !important;
+    }
+
+    .section-funcionalities{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
