@@ -18,7 +18,7 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies()); // Regi
 
 builder.Services.AddCors( p => p.AddPolicy("CORSPolicy", build =>
 {
-    build.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:3000", "https://appname.azurestaticapps.net");
+    build.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:3000", "https://victorious-plant-0f4deba03.3.azurestaticapps.net");
 }));
 
 var app = builder.Build();
