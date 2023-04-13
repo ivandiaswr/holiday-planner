@@ -1,5 +1,5 @@
+using aspnetserver.Data;
 using AutoMapper;
-using DataAccess.Data;
 using DataAccess.Dtos.Plan;
 using DataAccess.Models;
 using Microsoft.EntityFrameworkCore;
@@ -24,7 +24,7 @@ builder.Services.AddCors( p => p.AddPolicy("CORSPolicy", build =>
 var app = builder.Build();
 
 app.UseSwagger();
-app.UseSwaggerUI();
+app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "V1"));
 
 app.UseHttpsRedirection();
 

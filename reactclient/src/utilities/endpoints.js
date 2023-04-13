@@ -1,5 +1,5 @@
 const API_BASE_URL_DEVELOPMENT = 'https://localhost:7212';
-const API_BASE_URL_PRODUCTION = 'https://appname.azurewebsites.net';
+const API_BASE_URL_PRODUCTION = 'https://holidayplanner-aspnetserver.azurewebsites.net/';
 
 const ENDPOINTS = {
     GetAllPlans: 'api/v1/plans',

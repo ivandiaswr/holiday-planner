@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using DataAccess.Data;
 using DataAccess.Dtos;
 
 namespace aspnetserver.Apis

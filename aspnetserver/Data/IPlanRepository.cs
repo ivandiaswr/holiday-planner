@@ -1,6 +1,6 @@
 ﻿using DataAccess.Models;
 
-namespace DataAccess.Data
+namespace aspnetserver.Data
 {
     public interface IPlanRepository
     {

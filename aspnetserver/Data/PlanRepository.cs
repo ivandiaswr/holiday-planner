@@ -1,7 +1,7 @@
 ﻿using DataAccess.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace DataAccess.Data
+namespace aspnetserver.Data
 {
     public class PlanRepository : IPlanRepository
     {
