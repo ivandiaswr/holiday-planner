@@ -1,5 +1,5 @@
 import "./main.css"
-import welcomeIMG from "../../../../img/welcome.jpg"
+import welcomeIMG from "../../../../img/playground-thumbnail.png"
 import addIMG from "../../../../img/add.png"
 import updateIMG from "../../../../img/update.png"
 import deleteIMG from "../../../../img/delete.png"
@@ -18,13 +18,14 @@ export default function Main() {
             With our user-friendly interface, you can easily create holidays view your upcoming vacations.</p>
             <p>Whether you're planning a relaxing getaway, a family vacation, or a special occasion, our platform simplifies the vacation management process, giving you more time to focus on what matters most – enjoying your time off.</p>
           </div>
-          <div>
+          <div className="section-welcome-rightside">
             <div className="section-welcome-img">
               <img src= {welcomeIMG} alt="welcome" title="Welcome"></img>
             </div>
-            <button className="section-welcome-button"><Link to="/Playground">Demo here!</Link></button>
-          </div>
-          
+            <button className="section-welcome-button">
+              <Link to="/Playground">Demo here!</Link>
+            </button>
+          </div> 
         </section>
         
         <section id="funcionalities">

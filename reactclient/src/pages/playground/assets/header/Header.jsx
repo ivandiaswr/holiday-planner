@@ -8,7 +8,7 @@ export default function Header() {
         <header>
             <nav className="playground-nav">
                 <h2>Holiday Planner - Playground</h2>
-                <Link to="/">Home</Link>
+                <h3><Link to="/" className="home-button">Home</Link></h3>
             </nav>
         </header>
     )

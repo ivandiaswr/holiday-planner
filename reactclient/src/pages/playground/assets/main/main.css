@@ -3,8 +3,6 @@
     height: 100%;
     min-height: 100vh;
 
-    margin-top: 75px;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +14,7 @@
     column-gap: 20px;
     row-gap: 20px;
 
-    background-color: rgba(221, 221, 221, 0.616);
+    background-color: rgba(203, 203, 203, 0.616);
     padding: 50px;
     border-radius: 50px; 
 }
@@ -25,7 +23,7 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    background-color: rgb(250, 249, 248);
+    background-color: rgba(0, 0, 0, 0.704);
     padding: 10px;
     border-radius: 25px;
     border: 1px solid rgba(255, 140, 0, 0.13);
@@ -51,17 +49,15 @@
     font-size: 30px;
     height: 50px;
     padding: 0px 10px;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    background-color: rgba(255, 140, 0, 0.594);
+    border: 1px solid rgba(255, 140, 0, 0.615);
+    color: rgba(255, 140, 0, 0.615);
+    background-color: rgb(45, 45, 45);
     border-radius: 30px;
     cursor: pointer;
 }
 
 .card-button:hover {
-    color: rgba(255, 140, 0, 0.594);
-    background-color: whitesmoke;
-    border: 1px solid rgba(255, 140, 0, 0.615);
+    background-color: rgba(37, 37, 37, 0.927);
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
 }
@@ -74,10 +70,10 @@
 }
 
 .button-create {
-  border: 1px solid #ffffff;
+  border: 1px solid rgba(255, 140, 0, 0.615);
   border-radius: 15px;
-  color: #ffffff;
-  background-color: rgba(255, 140, 0, 0.594);
+  color: rgba(255, 140, 0, 0.615);
+  background-color: rgb(45, 45, 45);
   cursor: pointer;
   font-family: "Segoe UI",Helvetica,Arial,sans-serif;
   font-size: 22px;
@@ -92,9 +88,7 @@
 }
 
 .button-create:hover {
-  color: rgba(255, 140, 0, 0.594);
-  background-color: whitesmoke;
-  border: 1px solid rgba(255, 140, 0, 0.615);
+  background-color: rgba(37, 37, 37, 0.927);
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }

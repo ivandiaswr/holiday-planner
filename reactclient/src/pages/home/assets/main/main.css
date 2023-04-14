@@ -25,27 +25,30 @@ section {
     width: 90%;
 }
 
+.section-welcome-rightside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .section-welcome-img img{
-    width: 200px;
-    height: 300px;
+    width: 340px;
 }
 
 .section-welcome-button{
-    width: 100%;
+    width: 200px;
     font-size: 25px;
     height: 50px;
     padding: 0px 10px;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    background-color: rgba(255, 140, 0, 0.594);
+    border: 1px solid rgba(255, 140, 0, 0.615);
+    color: rgba(255, 140, 0, 0.615);
+    background-color: rgb(45, 45, 45);
     border-radius: 30px;
     cursor: pointer;
 }
 
 .section-welcome-button:hover{
-    color: rgba(255, 140, 0, 0.594);
-    background-color: whitesmoke;
-    border: 1px solid rgba(255, 140, 0, 0.615);
+    background-color: rgba(37, 37, 37, 0.927);
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
 }
@@ -83,13 +86,12 @@ section {
 .section-funcionalities-outter-img{
     width: 200px;
     height: 150px;
+    margin-bottom: 20px;
     display: grid;
     align-items: center;
     justify-content: center;
     border-radius: 70% 30% 25% 75% / 42% 16% 84% 58%;
-
     background: linear-gradient(90deg, rgba(245,140,5,0.4441624365482234) 28%, rgba(255,144,0,0.449238578680203) 69%, rgba(247,172,8,0.7715736040609137) 100%); 
-    margin-bottom: 20px;
 }
 
 .section-funcionalities-img{
@@ -135,12 +137,12 @@ section {
     margin-right: 30px;
     width: 5.5rem;
     height: 4.5rem;
-    background: #e19d31 linear-gradient(to bottom right, #e99816 25%, #e1ccd0);
-    text-shadow: 0 0 2px #ED4264;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: black;
+    border-radius: 70% 30% 25% 75% / 42% 16% 84% 58%;
+    background: linear-gradient(90deg, rgba(245,140,5,0.4441624365482234) 28%, rgba(255,144,0,0.449238578680203) 69%, rgba(247,172,8,0.7715736040609137) 100%); 
 }
 
 /* Contact */
@@ -184,12 +186,11 @@ section {
     section {
         padding: 15% 13%;
     }
-    .section-welcome{
-        flex-direction: row;
-       
-    }
     .section-welcome-text{
         max-width: 600px;
+    }
+    .section-welcome-img img{
+        width: 600px;
     }
     .section-funcionalities{
         grid-template-columns: 1fr 1fr;
@@ -205,6 +206,9 @@ section {
     section {
         padding: 8% 10% !important;
     }
+    .section-welcome-img img{
+        width: 700px;
+    }
     .section-funcionalities{
         grid-template-columns: 1fr 1fr;
         min-height: 60vh;
@@ -219,8 +223,14 @@ section {
     section {
         padding: 5% 10% !important;
     }
-
     .section-funcionalities{
         grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .section-welcome{
+        flex-direction: row;
+       
     }
 }

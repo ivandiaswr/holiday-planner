@@ -4,3 +4,8 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.home-button:hover,
+.home-button.active:hover{
+    color: rgba(255, 140, 0, 0.661);
+}
