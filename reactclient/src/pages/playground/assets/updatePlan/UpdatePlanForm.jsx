@@ -83,8 +83,7 @@ export default function UpdatePlanForm(props) {
             let urlId = props.plan.id
 
             const url = urlBase.concat("/", urlId);
-
-            console.log(planToUpdate)
+            
             fetch(url, 
                 { 
                 method: 'PUT',
