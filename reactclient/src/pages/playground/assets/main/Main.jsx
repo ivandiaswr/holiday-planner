@@ -14,31 +14,8 @@ export default function Main() {
   const [planToBeUpdated, setPlanToBeUpdated] = useState(null);
   const [showLoader, setShowLoader] = useState(true);
 
-  const GetPlans = () => {
-    const url = endpoints.API_GetAllPlans;
-
-    fetch(url, 
-      { 
-        method: 'GET'
-      })
-      .then(response => response.json())
-      .then(PlansFromServer => {
-        setData(PlansFromServer)
-      })
-      .catch((error) => {
-      });
-
-      data.map((data) => {
-        data.startDate = new Date(data.startDate).toLocaleDateString('pt-PT');
-        data.endDate = new Date(data.endDate).toLocaleDateString('pt-PT');
-      });
-
-  }
-
   useEffect(() => {
-    setTimeout(() => {
-      setShowLoader(false);
-    }, 4000);
+    GetPlans();
   }, []);
 
   return (
@@ -172,5 +149,30 @@ export default function Main() {
       })
       .catch((error) => {
       });
+  }
+  
+  function GetPlans(){
+
+      const url = endpoints.API_GetAllPlans;
+  
+      fetch(url, 
+        { 
+          method: 'GET'
+        })
+        .then(response => response.json())
+        .then(PlansFromServer => {
+          setData(PlansFromServer);
+  
+          PlansFromServer.map((data) => {
+            data.startDate = new Date(data.startDate).toLocaleDateString('pt-PT');
+            data.endDate = new Date(data.endDate).toLocaleDateString('pt-PT');
+          });
+          
+          setShowLoader(false);
+        })
+        .catch((error) => {
+        });
+  
+    
   }
 }
