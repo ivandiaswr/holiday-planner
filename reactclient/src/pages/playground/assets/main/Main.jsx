@@ -1,4 +1,4 @@
-import { useState, useEffect  } from 'react';
+import { useState, useEffect  } from 'react'
 import endpoints from '../../../../utilities/endpoints'
 import CreatePlanForm from '../createPlan/CreatePlanForm'
 import UpdatePlanForm from '../updatePlan/UpdatePlanForm'
@@ -7,6 +7,8 @@ import "./main.css"
 import Loader from '../loader/Loader'
 import { AiOutlineEdit } from 'react-icons/ai'
 import { AiOutlineDelete } from 'react-icons/ai'
+
+import { format } from 'date-fns'
 
 export default function Main() {
   const [data, setData] = useState([]);
@@ -29,8 +31,8 @@ export default function Main() {
       });
 
       data.map((data) => {
-        data.startDate = new Date(data.startDate).toLocaleDateString();
-        data.endDate = new Date(data.endDate).toLocaleDateString();
+        data.startDate = format(new Date(data.startDate), 'dd/MM/yyyy');
+        data.endDate = format(new Date(data.endDate), 'dd/MM/yyyy');
       });
 
   }

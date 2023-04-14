@@ -146,16 +146,4 @@ export default function UpdatePlanForm(props) {
 
         return dateFormatted;
     }
-
-    function formatDateStringToDate(dataString){
-        const endDate = formData.endDate;
-        const endDateParts = endDate.split('-'); // Split the date string by '/'
-        const year = endDateParts[2];
-        const month = endDateParts[1] - 1; // Subtract 1 from the month value to match JavaScript's Date object month indexing (0-based)
-        const day = endDateParts[0];
-
-        // Create a new Date object with the formatted date values
-        return new Date(year, month, day);
-    }
-
 }
